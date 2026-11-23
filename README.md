@@ -17,16 +17,10 @@ threat-intelligence tools for Claude, via the hosted WhoisFreaks MCP server.
 > Replace `WhoisFreaks/whoisfreaks-claude` with the actual public GitHub repo
 > (`owner/name`) this folder is pushed to.
 
-Before first use, set your free API key (from
-https://billing.whoisfreaks.com/signup) so Claude Code can authenticate — it is
-sent as an `X-API-Key` header, never in a URL:
-
-```bash
-export WHOISFREAKS_API_KEY="your-api-key-here"
-```
-
-Add that to your shell profile, restart Claude Code, run `/mcp`, and you should
-see **whoisfreaks** connected with 22 tools. See
+On install, Claude Code prompts you for your free WhoisFreaks API key (from
+https://billing.whoisfreaks.com/signup) and stores it securely in the plugin's
+config — it is sent as an `X-API-Key` header, never in a URL. Run `/mcp` and you
+should see **whoisfreaks** connected with 22 tools. See
 [`plugins/whoisfreaks/README.md`](plugins/whoisfreaks/README.md) for the full
 tool list and example prompts.
 

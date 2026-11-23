@@ -13,33 +13,23 @@ host. Every user brings their **own WhoisFreaks API key**.
 
 Sign up at **https://billing.whoisfreaks.com/signup** and copy your API key.
 
-## 2. Make the key available to Claude Code
-
-The plugin reads your key from the `WHOISFREAKS_API_KEY` environment variable
-(sent as an `X-API-Key` header — the key never appears in a URL or log).
+## 2. Install the plugin
 
 ```bash
-export WHOISFREAKS_API_KEY="your-api-key-here"
-```
-
-Add that line to your shell profile (`~/.bashrc`, `~/.zshrc`, …) so it is set in
-every session, then restart Claude Code.
-
-## 3. Install the plugin
-
-```bash
-/plugin marketplace add WhoisFreaks/whoisfreaks-mcp-server
+/plugin marketplace add WhoisFreaks/whoisfreaks-claude
 ```
 
 ```bash
 /plugin install whoisfreaks@whoisfreaks
 ```
 
-Restart Claude Code when prompted. Run `/mcp` — you should see **whoisfreaks**
-connected with 22 tools.
+Claude Code prompts you for your **WhoisFreaks API key** when the plugin loads
+and stores it securely in the plugin's config (sent as an `X-API-Key` header —
+never in a URL or log). Run `/mcp` — you should see **whoisfreaks** connected
+with 22 tools.
 
-> Replace `WhoisFreaks/whoisfreaks-mcp-server` with the actual GitHub repo (or
-> local path) that hosts this marketplace once it is published.
+> Replace `WhoisFreaks/whoisfreaks-claude` with the actual public GitHub repo
+> (`owner/name`) that hosts this marketplace once it is published.
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "whoisfreaks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WHOIS, DNS, IP geolocation, SSL and domain intelligence via the WhoisFreaks API — 22 AI-callable tools.",
   "author": {
     "name": "WhoisFreaks",
@@ -9,6 +9,7 @@
   "homepage": "https://whoisfreaks.com/integrations/third-party/mcp-server",
   "repository": "https://github.com/WhoisFreaks/whoisfreaks-mcp-server",
   "license": "MIT",
+  "privacyPolicyUrl": "https://whoisfreaks.com/privacy-policy",
   "keywords": [
     "whois",
     "dns",
@@ -21,12 +22,20 @@
     "threat-intel",
     "security"
   ],
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "WhoisFreaks API Key",
+      "description": "Your WhoisFreaks API key from https://billing.whoisfreaks.com/signup. Stored locally by Claude Code and sent to the WhoisFreaks MCP server as an X-API-Key header.",
+      "sensitive": true
+    }
+  },
   "mcpServers": {
     "whoisfreaks": {
       "type": "http",
       "url": "https://mcp.whoisfreaks.com/mcp",
       "headers": {
-        "X-API-Key": "${WHOISFREAKS_API_KEY}"
+        "X-API-Key": "${user_config.api_key}"
       }
     }
   }

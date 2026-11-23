@@ -39,3 +39,15 @@ plugins/whoisfreaks/                 # the plugin
   commands/domain-intel.md           #   /whoisfreaks:domain-intel slash command
   README.md                          #   user docs
 ```
+
+## License
+
+Released under the [MIT License](LICENSE) — you are free to use, copy, modify
+and redistribute this marketplace manifest and its command definitions.
+
+The MIT license covers **only the files in this repository** (the install
+manifest and slash-command prompts). It does **not** grant access to the
+WhoisFreaks API itself: each user needs their own WhoisFreaks API key, and all
+API usage is governed by the
+[WhoisFreaks Terms of Service](https://whoisfreaks.com/terms) and
+[Privacy Policy](https://whoisfreaks.com/privacy-policy).

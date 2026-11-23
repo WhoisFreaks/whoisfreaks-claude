@@ -1,0 +1,21 @@
+{
+  "name": "whoisfreaks",
+  "owner": {
+    "name": "WhoisFreaks",
+    "url": "https://whoisfreaks.com"
+  },
+  "metadata": {
+    "description": "Official WhoisFreaks plugins for Claude Code — domain, DNS, IP and SSL intelligence.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "whoisfreaks",
+      "source": "./plugins/whoisfreaks",
+      "description": "WHOIS, DNS, IP geolocation, SSL and domain intelligence via the WhoisFreaks API — 22 AI-callable tools.",
+      "version": "1.0.0",
+      "category": "security",
+      "keywords": ["whois", "dns", "ip-geolocation", "ssl", "domain", "osint", "security"]
+    }
+  ]
+}

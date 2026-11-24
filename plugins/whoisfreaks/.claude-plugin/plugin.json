@@ -7,9 +7,13 @@
     "url": "https://whoisfreaks.com"
   },
   "homepage": "https://whoisfreaks.com/integrations/third-party/mcp-server",
+  "documentationUrl": "https://whoisfreaks.com/integrations/third-party/mcp-server",
+  "supportUrl": "https://whoisfreaks.com/contact",
   "repository": "https://github.com/WhoisFreaks/whoisfreaks-mcp-server",
   "license": "MIT",
+  "icon": "./icon.png",
   "privacyPolicyUrl": "https://whoisfreaks.com/privacy-policy",
+  "termsOfServiceUrl": "https://whoisfreaks.com/terms",
   "keywords": [
     "whois",
     "dns",
